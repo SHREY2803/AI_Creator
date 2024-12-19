@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { brainwave } from "../assets";
 import { navigation } from "../constants";
 import { useLocation } from "react-router-dom";
 import Button from "./Button";
+import MenuSvg from "../assets/svg/MenuSvg";
+import { HamburgerMenu } from "../design/Header";
 
 
 const Navbar = () => {
   const pathnName = useLocation(); //this will give us access to the current url we are on.
+  const [openNavigation, setOpenNavigation] = useState(false);
   return (
     <div className="fixed top-0 left-0 z-50 w-full border-b bg-n-8/90 backdrop-blur-sm border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm">
       {" "}
