@@ -50,7 +50,7 @@ const Navbar = () => {
                 href={item.url}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-[0.9rem] lg:leading-4 lg:font-semibold ${
                   item.url === pathnName.hash
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
@@ -67,14 +67,14 @@ const Navbar = () => {
         </nav>
         <a
           href="#signup"
-          className="hidden mr-8 transition-colors hover:text-n-1 button text-n-1/50 lg:block"
+          className="hidden mr-8 transition-colors hover:text-n-1 button lg:text-[0.77rem] text-n-1/50 lg:block"
         >
           New Account
         </a>
         <Button className="ml-auto lg:hidden" px="px-5" onClick={toggleNav}>
           <MenuSvg openNavigation={openNav} />
         </Button>
-        <Button className="hidden lg:flex" href="#login">
+        <Button className="hidden lg:flex lg:text-[0.77rem]" href="#login">
           LogIn
         </Button>
       </div>
