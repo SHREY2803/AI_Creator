@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "../design/Header";
+import {disablePageScroll, enablePageScroll} from 'scroll-lock'; //this is a library that helps you to lock the body scroll when a modal is open.
 
 const Navbar = () => {
   const pathnName = useLocation(); //this will give us access to the current url we are on.
@@ -12,12 +13,17 @@ const Navbar = () => {
   const toggleNav = () =>{
     if(openNav){
       setOpenNav(false);
+      enablePageScroll(); //this will enable the body scroll when the navigation
     }
     else{
       setOpenNav(true);
+      disablePageScroll(); //this will disable the body scroll when the navigation is open.
     } 
   };
   const handleClick = () => {
+    if(!openNav) return; //if the navigation is not open then return
+    
+    enablePageScroll(); //this will enable the body scroll when the navigation is closed.
     setOpenNav(false);
   }
   return (
