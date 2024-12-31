@@ -1,5 +1,8 @@
-import React from 'react';
-import Section from './Section';
+import React from "react";
+import Section from "./Section";
+import curve from "../assets/hero/curve.png";
+import Button from "../components/Button.jsx";
+import robot from "../assets/hero/robot.jpg";
 
 const Hero = () => {
   return (
@@ -10,12 +13,45 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <div className='container relative'> 
+      <div className="container relative">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
-            <h1 className="mb-6 h1">
-                Explore the Possibilities of AI
-            </h1>
-            <span className='relative inline-block'>BrainWave</span>
+          <h1 className="mb-6 h1">
+            Explore the Possibilities of AI Chatting with BrainWaveCurve
+            <span className="relative inline-block h1">
+              BrainWave{" "}
+              <img
+                src={curve}
+                className="absolute left-0 w-full top-full xl:-mt-2"
+                width={624}
+                height={28}
+                alt="Curve"
+              />
+            </span>
+          </h1>
+          <p className="max-w-3xl mx-auto mb-6 body-1 text-n-2 lg:mb-8">
+            BrainWaveCurve is a conversational AI platform that helps businesses
+            to create and deploy AI-powered chatbots that can automate customer
+            support, sales, and marketing processes.
+          </p>
+          <Button href="/pricing" white>
+            Get Started
+          </Button>
+        </div>
+        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
+          <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
+            <div className="relative rounded-[1rem] bg-n-8">
+              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+              
+              <div className="aspect-[33/40] rounded-b-[0.9rem]
+              overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+                <img src={robot}
+                alt="robo"
+                className="object-cover"
+                height={1800}
+                width={1440} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Section>
