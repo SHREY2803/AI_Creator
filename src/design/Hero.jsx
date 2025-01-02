@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import Section from "./Section";
 import curve from "../assets/hero/curve.png";
 import Button from "../components/Button.jsx";
 import robot from "../assets/hero/robot.jpg";
 import heroBackground from "../assets/hero/hero-background.jpg";
+import { ScrollParallax } from "react-just-parallax";
+import { heroIcons } from "../constants";
+import { Gradient, BackgroundCircles, BottomLine } from "./HoverHero.jsx";
 
 const Hero = () => {
+  const parallaxRef = useRef(null);
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
@@ -14,10 +18,10 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <div className="container relative">
+      <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="mb-6 h1">
-            Explore the Possibilities of AI Chatting with BrainWaveCurve
+            Explore the Possibilities of AI Chatting with {` `}
             <span className="relative inline-block h1">
               BrainWave{" "}
               <img
@@ -54,8 +58,20 @@ const Hero = () => {
                   width={1024}
                   height={490}
                 />
+
+                <ScrollParallax isAbsolutelyPositioned>
+                  <ul className="absolute hidden -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+                    {heroIcons.map((icon, index) => (
+                      <li className="p-5" key={index}>
+                        <img src={icon} alt={icon} width={24} height={24} />
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollParallax>
               </div>
             </div>
+
+            <Gradient />
           </div>
           <div className="absolute -top-[54%] left-1/2 w-[235%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
@@ -65,6 +81,7 @@ const Hero = () => {
               width={1440}
             />
           </div>
+          <BackgroundCircles />
         </div>
       </div>
     </Section>
