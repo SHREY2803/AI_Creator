@@ -3,11 +3,12 @@ import Section from "./Section";
 import curve from "../assets/hero/curve.png";
 import Button from "../components/Button.jsx";
 import robot from "../assets/hero/robot.jpg";
+import heroBackground from "../assets/hero/hero-background.jpg";
 
 const Hero = () => {
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25]"
+      className="pt-[12rem] -mt-[5.25rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -29,8 +30,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="max-w-3xl mx-auto mb-6 body-1 text-n-2 lg:mb-8">
-            BrainWaveCurve is a conversational AI platform that helps businesses
-            to create and deploy AI-powered chatbots that can automate customer
+            BrainWave is a conversational AI platform that helps businesses to
+            create and deploy AI-powered chatbots that can automate customer
             support, sales, and marketing processes.
           </p>
           <Button href="/pricing" white>
@@ -41,16 +42,28 @@ const Hero = () => {
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative rounded-[1rem] bg-n-8">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-              
-              <div className="aspect-[33/40] rounded-b-[0.9rem]
-              overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-                <img src={robot}
-                alt="robo"
-                className="object-cover"
-                height={1800}
-                width={1440} />
+
+              <div
+                className="aspect-[33/40] rounded-b-[0.9rem]
+              overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]"
+              >
+                <img
+                  src={robot}
+                  alt="robo"
+                  className="object-cover w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[20%]"
+                  width={1024}
+                  height={490}
+                />
               </div>
             </div>
+          </div>
+          <div className="absolute -top-[54%] left-1/2 w-[235%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+            <img
+              src={heroBackground}
+              alt="heroback"
+              height={1800}
+              width={1440}
+            />
           </div>
         </div>
       </div>
