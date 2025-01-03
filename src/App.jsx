@@ -3,6 +3,7 @@ import ButtonGradient from "./assets/svg/ButtonGradient"; //this buttongradient 
 import Button from "./components/Button";
 import Navbar from "./components/Navbar";
 import Hero from "./design/Hero";
+import Benefits from "./components/Benefits";
 
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
         <Navbar />
         {/* <Button className="mt-10" href="#login">Something</Button> */}
         <Hero />
-        
+        <Benefits/>
       </div>
       <ButtonGradient />
     </>
