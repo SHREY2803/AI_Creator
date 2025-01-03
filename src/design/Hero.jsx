@@ -7,6 +7,8 @@ import heroBackground from "../assets/hero/hero-background.jpg";
 import { ScrollParallax } from "react-just-parallax";
 import { heroIcons } from "../constants";
 import { Gradient, BackgroundCircles, BottomLine } from "./HoverHero.jsx";
+import Generating from "./Generating.jsx";
+
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -58,6 +60,7 @@ const Hero = () => {
                   width={1024}
                   height={490}
                 />
+                <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[30rem] md:-translate-x-1/2"/>
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <ul className="absolute hidden -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
@@ -84,6 +87,8 @@ const Hero = () => {
           <BackgroundCircles />
         </div>
       </div>
+      
+      <BottomLine />
     </Section>
   );
 };
