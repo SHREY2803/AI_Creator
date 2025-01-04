@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./design/Hero";
 import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
+import Services from "./components/Services";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Collaboration/>
       </div>
       <ButtonGradient />
+      <Services/>
     </>
   );
 };
