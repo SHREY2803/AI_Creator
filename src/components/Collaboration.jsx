@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "../design/Section";
-import { collabContent, collabText } from "../constants";
+import { collabApps, collabContent, collabText } from "../constants";
 import { brainwaveSymbol, check } from "../assets";
 import Button from "./Button";
 
@@ -50,6 +50,20 @@ const Collaboration = () => {
                 </div>
               </div>
             </div>
+            <ul>{collabApps.map((item,index)=>(
+              <li key={item.id} className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
+                index * 45
+              }`}>
+                <div
+                  className={`relative flex -top-[1.6rem] w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${index * 45}`}>
+                  <img
+                  className="m-auto" 
+                  width={item.width}
+                  height={item.height}
+                  src={item.icon} alt={item.title} />
+                </div>
+              </li>
+            ))}</ul>
             
           </div>
         </div>
