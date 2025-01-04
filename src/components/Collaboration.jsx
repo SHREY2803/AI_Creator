@@ -3,6 +3,7 @@ import Section from "../design/Section";
 import { collabApps, collabContent, collabText } from "../constants";
 import { brainwaveSymbol, check } from "../assets";
 import Button from "./Button";
+import { RightCurve,LeftCurve } from "../design/Collaboration";
 
 const Collaboration = () => {
   return (
@@ -30,7 +31,7 @@ const Collaboration = () => {
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-3">
-          <p className="mb-4 body-2 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto ">
+          <p className="mb-8 body-2 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto ">
             {collabText}
           </p>
 
@@ -50,21 +51,32 @@ const Collaboration = () => {
                 </div>
               </div>
             </div>
-            <ul>{collabApps.map((item,index)=>(
-              <li key={item.id} className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
-                index * 45
-              }`}>
-                <div
-                  className={`relative flex -top-[1.6rem] w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${index * 45}`}>
-                  <img
-                  className="m-auto" 
-                  width={item.width}
-                  height={item.height}
-                  src={item.icon} alt={item.title} />
-                </div>
-              </li>
-            ))}</ul>
-            
+            <ul>
+              {collabApps.map((item, index) => (
+                <li
+                  key={item.id}
+                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
+                    index * 45
+                  }`}
+                >
+                  <div
+                    className={`relative flex -top-[1.6rem] w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
+                      index * 45
+                    }`}
+                  >
+                    <img
+                      className="m-auto"
+                      width={item.width}
+                      height={item.height}
+                      src={item.icon}
+                      alt={item.title}
+                    />
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <LeftCurve/>
+            <RightCurve/>
           </div>
         </div>
       </div>
