@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import Navbar from "./components/Navbar";
 import Hero from "./design/Hero";
 import Benefits from "./components/Benefits";
+import Collaboration from "./components/Collaboration";
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         {/* <Button className="mt-10" href="#login">Something</Button> */}
         <Hero />
         <Benefits/>
+        <Collaboration/>
       </div>
       <ButtonGradient />
     </>
