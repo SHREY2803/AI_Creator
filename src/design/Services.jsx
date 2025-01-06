@@ -3,9 +3,9 @@ import ChatBubbleWing from "../assets/svg/ChatBubbleWing.jsx";
 
 export const Gradient = () => {
   return (
-    <div className="absolute top-0 -left-[10rem] w-[56.625rem] h-[56.625rem] opacity-50 mix-blend-color-dodge pointer-events-none">
+    <div className=" hidden absolute -top-[10rem] w-full h-full opacity-50 pointer-events-none -left-[10rem] mix-blend-color-dodge md:block">
       <img
-        className="absolute top-1/2 left-1/2 w-[79.5625rem] max-w-[79.5625rem] h-[88.5625rem] -translate-x-1/2 -translate-y-1/2"
+        className="absolute top-1/2 left-1/2 w-full max-w-[80rem] h-auto -translate-x-1/2 -translate-y-1/2"
         src={gradient}
         width={1417}
         height={1417}
@@ -14,6 +14,7 @@ export const Gradient = () => {
     </div>
   );
 };
+
 
 export const PhotoChatMessage = () => {
   return (
