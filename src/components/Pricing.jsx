@@ -2,6 +2,8 @@ import React from "react";
 import Section from "../design/Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "../design/Heading.jsx";
+import PricingList from "../design/PricingList.jsx";
+import { LeftLine, RightLine } from "../design/Pricing.jsx";
 
 const Pricing = () => {
   return (
@@ -26,8 +28,16 @@ const Pricing = () => {
           </div>
         </div>
         <Heading
-        tag="Get Started with BrainWave"
-        title="Pay once, use forever"/>
+          tag="Get Started with BrainWave"
+          title="Pay once, use forever"
+        />
+
+        <div className="relative">
+          {/* Pricing List */}
+          <PricingList />
+          <LeftLine />
+          <RightLine />
+        </div>
       </div>
     </Section>
   );
