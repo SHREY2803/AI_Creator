@@ -57,7 +57,7 @@ const Navbar = () => {
                 onClick={handleClick}
               >
                 {" "}
-                {/*so here basically we used the useLocation to get which page we are on and based on that if the url matched with the page we are on we basically made that page title white other than other pages. */}
+                {/*so here basically we used the useLocation to get which page we are on and based on that if the url matched with the page we are on we basically made that page title white other than other pages. and we are basically mapping the section id with href so it can navigate to that particular section. */}
                 {item.title}
               </a>
             ))}
