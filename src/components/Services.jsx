@@ -13,6 +13,7 @@ import {
   VideoBar,
   VideoChatMessage,
 } from "../design/Services.jsx";
+import { GradientLight } from "../design/Benefits.jsx";
 
 const Services = () => {
   return (
@@ -117,7 +118,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <Gradient />
+          {/* <Gradient/> */}
         </div>
       </div>
     </Section>
