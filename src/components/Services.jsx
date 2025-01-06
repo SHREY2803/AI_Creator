@@ -17,7 +17,7 @@ import { GradientLight } from "../design/Benefits.jsx";
 
 const Services = () => {
   return (
-    <Section crosses id="App-usage">
+    <Section crosses id="how-to-use">
       <div className="container">
         <Heading
           title="Generative AI made for Creators."
