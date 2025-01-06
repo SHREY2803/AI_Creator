@@ -103,8 +103,21 @@ const Services = () => {
                   ))}
                 </ul>
               </div>
+              <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
+                <img
+                  src={service3}
+                  alt="thridRobo"
+                  className="object-cover w-full h-full"
+                  width={520}
+                  height={400}
+                />
+
+                <VideoChatMessage />
+                <VideoBar />
+              </div>
             </div>
           </div>
+          <Gradient />
         </div>
       </div>
     </Section>
