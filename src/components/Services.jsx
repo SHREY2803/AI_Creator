@@ -7,7 +7,12 @@ import {
   brainwaveServicesIcons,
 } from "../constants/index.js";
 import Generating from "../design/Generating.jsx";
-import {PhotoChatMessage, Gradient, VideoBar, VideoChatMessage} from "../design/Services.jsx";
+import {
+  PhotoChatMessage,
+  Gradient,
+  VideoBar,
+  VideoChatMessage,
+} from "../design/Services.jsx";
 
 const Services = () => {
   return (
@@ -63,10 +68,41 @@ const Services = () => {
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-16">
                 <h4 className="mb-4 h4">Photo Editing</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically ehnance your photos using AI's app's photo edit feature to make your photos look professional.
+                  Automatically ehnance your photos using AI's app's photo edit
+                  feature to make your photos look professional.
                 </p>
               </div>
               <PhotoChatMessage />
+            </div>
+            <div className="p-4 overflow-hidden bg-n-7 rounded-3xl lg:min-h-[46rem]">
+              <div className="px-4 py-12 xl:px-8">
+                <h4 className="mb-4 h4 ">Video Generation</h4>
+                <p className="mb-[2rem] body-2 text-n-3">
+                  The world's most powerful AI photo and video art generation.
+                </p>
+                <ul className="flex items-center justify-between">
+                  {brainwaveServicesIcons.map((item, index) => (
+                    <li
+                      key={index}
+                      className={` rounded-2xl flex items-center justify-center ${
+                        index === 2
+                          ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient  md:w-[4.5rem] md:h-[4.rem]"
+                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
+                      }`}
+                    >
+                      <div
+                        className={
+                          index === 2
+                            ? "flex items-center w-full h-full bg-n-7 rounded-[1rem]"
+                            : ""
+                        }
+                      >
+                        <img src={item} alt={item} width={24} height={24} />
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
