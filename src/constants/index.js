@@ -108,6 +108,7 @@ import {
       date: "May 2023",
       status: "progress",
       imageUrl: roadmap2,
+      colorful: true,
     },
     {
       id: "2",
@@ -116,6 +117,7 @@ import {
       date: "May 2023",
       status: "done",
       imageUrl: roadmap3,
+      colorful: true,
     },
     {
       id: "3",
@@ -124,6 +126,7 @@ import {
       date: "May 2023",
       status: "progress",
       imageUrl: roadmap4,
+      colorful: true,
     },
   ];
   
