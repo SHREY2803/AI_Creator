@@ -9,7 +9,7 @@ import Button from "./Button";
 
 const Roadmap = () => {
   return (
-    <Section className="overflow-hidden" id="roadmap">
+    <Section className="overflow-hidden" id="roadmap" crosses>
       <div className="container md:pb-10">
         <Heading
           className={`text-center`}
