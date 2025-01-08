@@ -10,23 +10,20 @@ import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Footer from "./components/Footer";
 
-
-
 const App = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Navbar />
-        {/* <Button className="mt-10" href="#login">Something</Button> */}
         <Hero />
-        <Benefits/>
-        <Collaboration/>
+        <Benefits />
+        <Collaboration />
+        <Services />
+        <Pricing />
+        <Roadmap />
+        <Footer />
       </div>
       <ButtonGradient />
-      <Services/>
-      <Pricing/>
-      <Roadmap/>
-      <Footer />
     </>
   );
 };
