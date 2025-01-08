@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "../design/Section";
-import { collabApps, collabContent, collabText } from "../constants";
+import { collabApps, collabContent, collabText, collabSecondText } from "../constants";
 import { brainwaveSymbol, check } from "../assets";
 import Button from "./Button";
 import { RightCurve,LeftCurve } from "../design/Collaboration";
@@ -32,7 +32,7 @@ const Collaboration = () => {
 
         <div className="lg:ml-auto xl:w-[38rem] mt-3">
           <p className="mb-8 body-2 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto ">
-            {collabText}
+            {collabSecondText}
           </p>
 
           <div className="relative flex left-1/2 w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
