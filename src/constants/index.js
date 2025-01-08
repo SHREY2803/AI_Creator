@@ -132,6 +132,8 @@ import {
   
   export const collabText =
     "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  export const collabSecondText =
+    "Equipped with intelligent automation and robust security, it’s the ideal choice for teams aiming to boost productivity and efficiency.";
   
   export const collabContent = [
     {
