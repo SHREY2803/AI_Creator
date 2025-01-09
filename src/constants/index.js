@@ -304,25 +304,19 @@ import {
       id: "0",
       title: "Discord",
       iconUrl: discordBlack,
-      url: "#",
+      url: "https://discordapp.com/users/550245916247064587",
     },
     {
       id: "1",
       title: "Twitter",
       iconUrl: twitter,
-      url: "#",
+      url: "https://x.com/ShreyKulkarni",
     },
     {
       id: "2",
       title: "Instagram",
       iconUrl: instagram,
-      url: "#",
-    },
-    {
-      id: "3",
-      title: "Telegram",
-      iconUrl: telegram,
-      url: "#",
+      url: "https://www.instagram.com/kulkarnishrey/",
     },
     {
       id: "4",
