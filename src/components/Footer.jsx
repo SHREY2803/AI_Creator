@@ -1,16 +1,17 @@
 import React from "react";
 import Section from "../design/Section";
 import { socials } from "../constants";
+import { FloatingDockDemo } from "../test2";
 
 const Footer = () => {
   return (
-    <Section crosses className="!px-0 !py-10"   >
-      <div className="container flex items-center justify-center gap-10 sm:justify-between max-sm:flex-col">
+    <Section crosses className="!px-0 !py-10">
+      <div className="container flex items-center justify-center gap-2 sm:justify-between max-sm:flex-col">
         <p className="caption text-n-4 lg:block">
           © {new Date().getFullYear()}. All rights reserved.
         </p>
 
-        <ul className="flex flex-wrap gap-4">
+        {/* <ul className="flex flex-wrap gap-4">
           {socials.map((item) => (
             <a
               key={item.id}
@@ -21,7 +22,10 @@ const Footer = () => {
               <img src={item.iconUrl} width={16} height={16} alt={item.title} />
             </a>
           ))}
-        </ul>
+        </ul> */}
+        <div>
+          <FloatingDockDemo />
+        </div>
       </div>
     </Section>
   );
